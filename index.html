@@ -4,14 +4,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="container">
+		<div class="img"></div>
 
-    <h1>Awesome Currency Converter</h1>
+<div class="card">
+
+	<h1>Awesome Currency Converter</h1>
     <p class="convert">
         Convert :
         <input type="number" id="original-currency-amount" placeholder="0" value="1"> </input>
     </p>
     <div>
-        	<select id="from_currency">
+		<select id="from_currency">
 			<option value="AED">AED</option>
 			<option value="ARS">ARS</option>
 			<option value="AUD">AUD</option>
@@ -72,6 +76,7 @@
 			<option value="ARS">ARS</option>
 			<option value="AUD">AUD</option>
 			<option value="BGN">BGN</option>
+			<option value="ETB">ETB</option>
 			<option value="BRL">BRL</option>
 			<option value="BSD">BSD</option>
 			<option value="CAD">CAD</option>
@@ -96,6 +101,8 @@
 			<option value="ISK">ISK</option>
 			<option value="JPY">JPY</option>
 			<option value="KRW">KRW</option>
+			<option value="ETB">ETB</option>
+
 			<option value="KZT">KZT</option>
 			<option value="MXN">MXN</option>
 			<option value="MYR">MYR</option>
@@ -123,15 +130,17 @@
         </select>
     </div>
     <p class="exchange">
-        Exchange Rate:
+		Exchange Rate:
         
         <input type="text" id="exchange-rate" ></input>
     </p>
     <button id="exchange_button">Exchange my money now!</button>
     <p id="output-text">
-        <span id="from"></span> converted to <span id="to"></span>
+		<span id="from"></span> converted to <span id="to"></span>
     </p>
     <script src="./script.js  "></script>
-
-    </body>
+	</div>
+	 
+</div>
+</body>
 </html>
