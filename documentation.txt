@@ -1,0 +1,67 @@
+# Currency Converter Web Application Documentation
+
+## Overview
+This is a simple web application built with Flask that allows users to convert between different currencies. The application retrieves currency exchange rates from an external API and performs conversions based on user input.
+
+## Prerequisites
+Before running the application, ensure you have the following installed:
+- Python 3.x
+- Flask (`pip install Flask`)
+- Requests (`pip install requests`)
+
+## Installation
+1. Clone or download the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using pip:
+
+## Usage
+1. Run the Flask application by executing the following command in the terminal:
+2. Once the application is running, open a web browser and navigate to `http://127.0.0.1:5000/`.
+
+## Endpoints
+- **GET /currencies**: Retrieves a list of supported currencies along with their symbols and flag emojis.
+- **GET /convert**: Converts an amount from one currency to another based on user input.
+
+## API Endpoints
+- **GET /currencies**: Returns a JSON object containing information about supported currencies.
+- Example Response:
+ ```json
+ [
+     {
+         "code": "USD",
+         "name": "United States Dollar",
+         "symbol": "$",
+         "flag": "🇺🇸"
+     },
+     ...
+ ]
+ ```
+
+- **GET /convert**: Converts an amount from one currency to another.
+- Parameters:
+ - `from_currency`: The currency code to convert from.
+ - `to_currency`: The currency code to convert to.
+ - `amount`: The amount to convert.
+- Example Request:
+ ```
+ GET /convert?from_currency=USD&to_currency=EUR&amount=100
+ ```
+- Example Response:
+ ```json
+ 87.02
+ ```
+
+## Notes
+- The application uses a free API to retrieve currency exchange rates. You may replace it with another API of your choice for production use.
+- Ensure that the Flask server is running before making any requests to the endpoints.
+## challenges
+- i made this project using my phone
+- i use trebedit app to write the html and javavscript code.
+- for python i use pydroid app
+
+## Authors
+- bereket aschalew
+- kebermelash negash
+- abenezer 
+## special thanks
+- for dan energy ethiopia
