@@ -10,7 +10,7 @@ To use the Currency Conversion functionality on your webpage, follow these steps
 
 ```html
 <script>
-  // Place the provided code here
+  scripts.js
 </script>
 ```
 
